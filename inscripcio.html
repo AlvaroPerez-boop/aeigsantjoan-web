@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripció - El Cau</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">El cau</a></div>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="qui-som.html">Qui Som</a></li>
+                <li><a href="activitats.html">Activitats</a></li>
+                <li><a href="inscripcio.html" class="active">Inscripció</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Inscripció</h1>
+            <p>Forma part de la nostra família escolta</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="inscription-info">
+            <h2>Com inscriure's</h2>
+            <p>Estem oberts a tots els infants i joves entre 6 i 19 anys. El procés d'inscripció és senzill i ràpid:</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Contacta amb nosaltres</h3>
+                    <p>Envia'ns un correu o truca'ns per concertar una primera reunió informativa.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Vine a conèixer-nos</h3>
+                    <p>Pots venir un dissabte a provar les activitats sense cap compromís.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Omple la fitxa</h3>
+                    <p>Si t'agrada, emplena la fitxa d'inscripció i ja formaràs part del Cau!</p>
+                </div>
+            </div>
+
+            <h2>Seccions per edats</h2>
+            <div class="sections-grid">
+                <div class="section-card">
+                    <div class="section-icon">🐿️</div>
+                    <h3>Castors i lludrigues</h3>
+                    <p class="age">6-8 anys</p>
+                    <p>Els més petits comencen la seva aventura amb jocs i activitats adaptades.</p>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon">🐺​</div>
+                    <h3>Llops i daines</h3>
+                    <p class="age">9-11 anys</p>
+                    <p>Descobreixen la natura i aprenen a treballar en equip.</p>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon">🏕️</div>
+                    <h3>Rangers i noies guia</h3>
+                    <p class="age">12-14 anys</p>
+                    <p>Viuen grans aventures i desenvolupen la seva autonomia.</p>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon">🎯</div>
+                    <h3>Pioners i caraveles</h3>
+                    <p class="age">14-16 anys</p>
+                    <p>Projectes de servei i reptes personals.</p>
+                </div>
+                <div class="section-card">
+                    <div class="section-icon">🌟</div>
+                    <h3>Truc</h3>
+                    <p class="age">17-19 anys</p>
+                    <p>Els joves s'impliquen en projectes comunitaris i internacionals.</p>
+                </div>
+            </div>
+
+            <h2>Què inclou la quota?</h2>
+            <div class="pricing-info">
+                <div class="price-card">
+                    <h3>Quota Trimestral</h3>
+                    <div class="price">70€</div>
+                    <ul class="price-includes">
+                        <li>✓ Activitats setmanals</li>
+                        <li>✓ Assegurança</li>
+                        <li>✓ Material educatiu</li>
+                        <li>✓ Foulard de l'agrupament</li>
+                        <li>✓ Formació continuada</li>
+                    </ul>
+                    <p class="price-note">Les sortides i colònies tenen un cost addicional</p>
+                </div>
+
+                <div class="help-info">
+                    <h3>💙 Ajudes econòmiques</h3>
+                    <p>Cap infant es queda sense fer escolta per motius econòmics. Si necessites ajuda, parla amb nosaltres amb total confidencialitat.</p>
+                    <p>Disposem d'un fons social i oferim facilitats de pagament.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inscription-form-section">
+        <h2>Formulari de Pre-inscripció</h2>
+        <p class="form-intro">Omple aquest formulari i ens posarem en contacte amb tu el més aviat possible.</p>
+  
+        <form class="inscription-form" id="inscription-form" action="https://formspree.io/f/mqaynpbd" method="POST">
+                <h3>Dades de l'infant/jove</h3>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom-infant">Nom *</label>
+                        <input type="text" id="nom-infant" name="nom-infant" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cognoms-infant">Cognoms *</label>
+                        <input type="text" id="cognoms-infant" name="cognoms-infant" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="data-naixement">Data de naixement *</label>
+                        <input type="date" id="data-naixement" name="data-naixement" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edat">Edat *</label>
+                        <input type="number" id="edat" name="edat" required>
+                    </div>
+                </div>
+
+                <h3>Dades del tutor/a legal</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nom-tutor">Nom del tutor/a *</label>
+                        <input type="text" id="nom-tutor" name="nom-tutor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cognoms-tutor">Cognoms *</label>
+                        <input type="text" id="cognoms-tutor" name="cognoms-tutor" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email-tutor">Correu electrònic *</label>
+                        <input type="email" id="email-tutor" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefon-tutor">Telèfon *</label>
+                        <input type="tel" id="telefon-tutor" name="telefon-tutor" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="adreca">Adreça completa</label>
+                    <input type="text" id="adreca" name="adreca">
+                </div>
+
+                <h3>Informació addicional</h3>
+
+                <div class="form-group">
+                    <label for="com-ens-coneixes">Com ens has conegut?</label>
+                    <select id="com-ens-coneixes" name="com-ens-coneixes">
+                        <option value="">Selecciona una opció</option>
+                        <option value="amics">Amics o familiars</option>
+                        <option value="escola">Escola</option>
+                        <option value="internet">Internet</option>
+                        <option value="xarxes">Xarxes socials</option>
+                        <option value="cartell">Cartells al poble</option>
+                        <option value="altre">Altre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="informacio-medica">Informació mèdica rellevant (al·lèrgies, medicacions, etc.)</label>
+                    <textarea id="informacio-medica" name="informacio-medica" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentaris">Comentaris o dubtes</label>
+                    <textarea id="comentaris" name="comentaris" rows="4"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="accepto-privacitat" required>
+                        He llegit i accepto la <a href="#">política de privacitat</a> *
+                    </label>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="info-activitats">
+                        Accepto rebre informació sobre activitats i esdeveniments
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Enviar</button>
+                <p id="inscription-status" style="margin-top:10px;"></p>
+                <p class="form-note">* Camps obligatoris</p>
+
+            </form>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntes freqüents</h2>
+            
+            <div class="faq-item">
+                <h3>❓ Què ha de portar el meu fill/a el primer dia?</h3>
+                <p>Roba còmoda i esportiva, calçat adequat per fer activitats a l'exterior. El foulard i la camisa de l'agrupament es lliuren més endavant.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Han de tenir experiència prèvia?</h3>
+                <p>No cal cap experiència prèvia. Tots els infants són benvinguts i els monitors adapten les activitats al nivell de cada grup.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Quina assegurança tenen?</h3>
+                <p>Tots els membres estan coberts per una assegurança d'accidents i responsabilitat civil que inclou totes les activitats de l'agrupament.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Poden venir a provar abans d'inscriure's?</h3>
+                <p>Sí! Pots venir qualsevol dissabte a provar les activitats sense cap compromís. Només cal que ens avisar prèviament.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>❓ Què passa si no pot venir un dia?</h3>
+                <p>No passa res! Sabem que a vegades hi ha altres compromisos. Només cal avisar-nos amb temps.</p>
+            </div>
+        </div>
+
+        <div class="contact-cta">
+            <h2>Tens més preguntes?</h2>
+            <p>No dubtis en contactar-nos. Estarem encantats d'ajudar-te!</p>
+            <a href="contacte.html" class="btn">Contacta'ns</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AEiG Sant Joan. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
