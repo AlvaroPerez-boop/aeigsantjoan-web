@@ -69,6 +69,26 @@ nav a:hover {
 nav a.active {
     border-bottom: 3px solid #ff6b35;
 }
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+}
+
+.hamburger:focus {
+    outline: 2px solid #ff6b35;
+    outline-offset: 4px;
+}
 
 /* ========================================
    HERO SECTION
@@ -151,6 +171,7 @@ nav a.active {
     border: 2px solid #2d5016;
     transition: all 0.3s;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .btn-secondary:hover {
@@ -486,6 +507,7 @@ nav a.active {
 
 .contact .section-title {
     color: white;
+    
 }
 
 .contact .section-title::after {
@@ -513,6 +535,11 @@ nav a.active {
 .contact-icon {
     font-size: 2rem;
     min-width: 40px;
+}
+.contact-link{
+
+    text-decoration: none;
+    color: white;
 }
 
 /* Contact Page Specific */
@@ -945,6 +972,11 @@ nav a.active {
     margin-bottom: 1rem;
     color: #555;
     line-height: 1.8;
+}
+.ubi{
+
+    color: #4a4a4a;
+    text-decoration: none;
 }
 
 /* ========================================
