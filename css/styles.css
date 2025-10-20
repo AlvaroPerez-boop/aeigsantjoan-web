@@ -17,13 +17,13 @@ body {
    HEADER AND NAVIGATION
    ======================================== */
 header {
-    background: linear-gradient(135deg, #4f7f31 0%, #2a6708 100%);
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
     color: white;
     padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav {
@@ -41,6 +41,11 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
 }
 
 .logo::before {
@@ -69,6 +74,7 @@ nav a:hover {
 nav a.active {
     border-bottom: 3px solid #ff6b35;
 }
+
 /* Hamburger Menu Button */
 .hamburger {
     display: none;
@@ -171,7 +177,6 @@ nav a.active {
     border: 2px solid #2d5016;
     transition: all 0.3s;
     margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .btn-secondary:hover {
@@ -214,6 +219,7 @@ nav a.active {
     text-align: center;
     font-size: 2.5rem;
     color: #2d5016;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     position: relative;
     padding-bottom: 1rem;
@@ -249,6 +255,7 @@ nav a.active {
     color: #2d5016;
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .about-text p {
@@ -507,7 +514,6 @@ nav a.active {
 
 .contact .section-title {
     color: white;
-    
 }
 
 .contact .section-title::after {
@@ -536,11 +542,6 @@ nav a.active {
     font-size: 2rem;
     min-width: 40px;
 }
-.contact-link{
-
-    text-decoration: none;
-    color: white;
-}
 
 /* Contact Page Specific */
 .contact-page-grid {
@@ -560,13 +561,13 @@ nav a.active {
 .contact-methods {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .contact-method {
     display: flex;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1rem;
     background: #f9f9f9;
     border-radius: 10px;
 }
@@ -606,7 +607,14 @@ nav a.active {
 .social-link {
     margin: 0 0.5rem;
 }
-
+.contact-link{
+    color: white;
+    text-decoration: none;
+}
+.ubi{
+    color: #555 ;
+    text-decoration: none;
+}
 /* ========================================
    FORM STYLES
    ======================================== */
@@ -643,6 +651,13 @@ nav a.active {
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #4a7c2c;
 }
 
 .form-group textarea {
@@ -946,6 +961,9 @@ nav a.active {
    ======================================== */
 .map-section {
     margin-top: 3rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .map-section a{
@@ -953,11 +971,57 @@ nav a.active {
     text-decoration: none;
     font-weight: 500;  
 }
+
+.map-section a:hover{
+    text-decoration: underline;
+}
+
 .map-section h2 {
     color: #2d5016;
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     text-align: center;
+}
+
+.map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.map-info {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid #4a7c2c;
+}
+
+.map-info p {
+    margin-bottom: 1rem;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.map-info ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.map-info ul li {
+    padding: 0.5rem 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.map-embed {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .map-placeholder {
@@ -972,11 +1036,6 @@ nav a.active {
     margin-bottom: 1rem;
     color: #555;
     line-height: 1.8;
-}
-.ubi{
-
-    color: #4a4a4a;
-    text-decoration: none;
 }
 
 /* ========================================
@@ -1009,14 +1068,51 @@ footer {
    ======================================== */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        gap: 1rem;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        order: 2;
+        margin-left: auto;
+    }
+
+    .logo {
+        order: 1;
     }
 
     nav ul {
+        order: 3;
+        width: 100%;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0;
         text-align: center;
+        background: #2d5016;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul li {
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        padding: 0.8rem 0;
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    nav a.active {
+        background: rgba(255, 107, 53, 0.2);
+        border-bottom: none;
+        border-left: 4px solid #ff6b35;
     }
 
     .hero-content h1 {
@@ -1056,6 +1152,14 @@ footer {
 
     .container {
         padding: 2rem 1rem;
+    }
+
+    .map-container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-embed {
+        height: 300px;
     }
 }
 
