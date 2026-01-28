@@ -11,30 +11,68 @@
 </head>
 <body>
     <header>
-        <nav>
-           <div class="logo">
-    <a href="index.html">
-        <img src="img/foto.png" alt="AEiG Sant Joan Logo">
-    </a>
-</div>
-
-            <ul>
-                <li><a href="index.html" class="active">Inici</a></li>
-                <li><a href="qui-som.html">Qui Som</a></li>
-                <li><a href="activitats.html">Activitats</a></li>
-                <li><a href="inscripcio.html">Inscripció</a></li>
-                <li><a href="contacte.html">Contacte</a></li>
+<nav>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../img/foto.png" alt="AEiG Sant Joan Logo">
+        </a>
+    </div>
+    <ul>
+        <li><a href="../index.html">Inici</a></li>
+        
+        <!-- Dropdown for Qui Som -->
+        <li class="dropdown">
+            <a  class="dropdown-toggle">Qui Som ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="../qui-som.html">Història</a></li>
+                <li><a href="../equip.html">Equip</a></li>
+                <li><a href="../valors.html">Valors</a></li>
             </ul>
-        </nav>
+        </li>
+        
+        <li><a href="../activitats.html">Activitats</a></li>
+        <li><a href="../inscripcio.html">Inscripció</a></li>
+        <li><a href="../contacte.html">Contacte</a></li>
+    </ul>
+</nav>
     </header>
 
-    <section class="hero" id="inici">
-        <div class="hero-content">
-            <h1>AEiG Sant Joan</h1>
-            <p>Educant per la vida des de 1956</p>
-            <a href="inscripcio.html" class="btn">Inscriu-te ara</a>
-        </div>
-    </section>
+<div class="hero-carousel">
+  <div class="carousel-slide active" style="background-image: url('/img/foto1.jpg');">
+    <div class="hero-content">
+      <h1>AEiG Sant Joan</h1>
+      <p>Educant en el lleure des de 1956</p>
+       <a href="qui-som.html" class="btn-secondary">Descobreix més </a>
+    </div>
+  </div>
+  
+  <div class="carousel-slide" style="background-image: url('/img/foto2.jpg');">
+    <div class="hero-content">
+      <h1>Second Slide Title</h1>
+      <p>Different text for second slide</p>
+      <button class="cta-button">Learn More</button>
+    </div>
+  </div>
+  
+  <div class="carousel-slide" style="background-image: url('/img/foto3.jpg');">
+    <div class="hero-content">
+      <h1>Third Slide Title</h1>
+      <p>Another message here</p>
+      <button class="cta-button">Get Started</button>
+    </div>
+  </div>
+  
+  <!-- Navigation -->
+  <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+  
+  <!-- Dots -->
+  <div class="carousel-dots">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+  </div>
+</div>
 
     <section class="about" id="nosaltres">
         <div class="container">
