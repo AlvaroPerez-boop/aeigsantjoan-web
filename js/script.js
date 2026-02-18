@@ -15,15 +15,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // ========================================
-// TRANSLUCENT HEADER ON SCROLL
+// TRANSLUCENT HEADER ON SCROLL (INDEX PAGE ONLY)
 // ========================================
 const header = document.querySelector('header');
 const heroCarousel = document.querySelector('.hero-carousel');
 
 function handleHeaderScroll() {
-    if (!header) return;
+    if (!header || !heroCarousel) return;
     
-    const heroHeight = heroCarousel ? heroCarousel.offsetHeight : window.innerHeight;
+    // Only apply scroll effect if we're on the index page
+    if (!document.body.classList.contains('index-page')) return;
+    
+    const heroHeight = heroCarousel.offsetHeight;
     
     if (window.scrollY > heroHeight - 100) {
         header.classList.add('scrolled');
