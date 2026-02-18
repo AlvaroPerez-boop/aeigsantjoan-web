@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - El Cau</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/escudo cau.PNG">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/escudo cau.PNG">
+    <link rel="apple-touch-icon" href="img/escudo cau.PNG">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+<nav>
+    <div class="logo">
+        <a href="../index.html">
+            <img src="../img/foto.png" alt="AEiG Sant Joan Logo">
+        </a>
+    </div>
+    <ul>
+        <li><a href="../index.html">Inici</a></li>
+        
+        <!-- Dropdown for Qui Som -->
+        <li class="dropdown">
+            <a class="dropdown-toggle">Qui Som ▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="../qui-som.html">Història</a></li>
+                <li><a href="../equip.html">Equip</a></li>
+                <li><a href="../valors.html">Valors</a></li>
+            </ul>
+        </li>
+        
+        <li><a href="../activitats.html">Activitats</a></li>
+        <li><a href="../inscripcio.html">Inscripció</a></li>
+        <li><a href="../contacte.html">Contacte</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contacte</h1>
+            <p>Estem aquí per resoldre tots els teus dubtes</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="contact-page-grid">
+            <div class="contact-info-full">
+                <h2>Com ens pots trobar</h2>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Correu Electrònic</h3>
+                            <p><a href="mailto:santjoan@escoltesiguies.cat">santjoan@escoltesiguies.cat</a></p>
+                            <p class="contact-note">Respondrem en menys de 24 hores</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Telèfon</h3> 
+                            <p><a href="tel:678174953">678 17 49 53</a></p>
+                            <p class="contact-note">Disponible de dilluns a divendres de 18:00 a 20:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h3>Xarxes Socials</h3>
+                            <p>
+                                <a href="https://www.facebook.com/causantjoan/" class="social-link">Facebook</a> |
+                                <a href="https://www.instagram.com/aeigsantjoan/" class="social-link">Instagram</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-full">
+                <h2>Envia'ns un missatge</h2>
+                <div class="contact-form"> 
+                <form action="https://formspree.io/f/xkgqyjjn" method="POST">
+                <div class="form-group">
+              <label>
+                Nombre:
+                <input type="text" name="name" placeholder="Tu nombre" required>
+              </label>
+               </div>
+                <div class="form-group">
+              <label>
+                Correo electrónico:
+                <input type="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+              </label>
+               </div>
+                <div class="form-group">
+              <label>
+                Mensaje:
+                <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </label>
+           
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario de contacto">
+                </div>
+              <button type="submit" class='btn'>Enviar</button>
+              <p id="form-status" style="margin-top:10px;"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <h2 class = "section-title">Com arribar</h2>
+            <div class="map-container">
+                <div class="map-info">
+                    <p>📍 <a href="https://maps.app.goo.gl/PDQQWU43cbJtFoFHA">Carrer Sitges, 27 - Viladecans</a></p>
+                    <p><strong>Transport públic:</strong></p>
+                    <ul>
+                        <li>🚂 Renfe: Estació de Viladecans (10 min caminant)</li>
+                        <li>🚌 Bus: Línies L95, L96, L97</li>
+                        <li>🚗 Aparcament gratuït al carrer</li>
+                    </ul>
+                </div>
+                <div class="map-embed">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.8259287624887!2d2.0137957!3d41.3139944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498f576f0aaab%3A0x7d89a3d3e9c8b8c8!2sCarrer%20Sitges%2C%2027%2C%2008840%20Viladecans%2C%20Barcelona!5e0!3m2!1sen!2ses!4v1234567890123!5m2!1sen!2ses" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; border-radius: 10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AEiG Sant Joan. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
